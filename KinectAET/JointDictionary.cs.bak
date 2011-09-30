@@ -1,0 +1,245 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Xml.Serialization;
+using OpenNI;
+using System.Linq;
+
+namespace KinectAET
+{
+    /// <summary>
+    /// Represents one set of equivalent translations for the same tuple.
+    /// </summary>
+    public struct JointTranslationTuple
+    {
+        public String name;
+        public SkeletonJoint joint_type;
+        public int export_id;
+
+        public JointTranslationTuple(String name, SkeletonJoint joint_type, int export_id)
+        {
+            this.name = name; this.joint_type = joint_type; this.export_id = export_id;
+        }
+    }
+
+    [XmlRoot("annopoints"), Serializable]
+    public class JointDictionary :
+        Dictionary<SkeletonJoint, SkeletonJointPosition>,
+        IXmlSerializable
+    {
+        private bool _is3DData;
+
+        /// <summary>
+        /// Wether this dictionary contains 3d data.
+        /// </summary>
+        public bool Is3DData
+        {
+            get { return _is3DData; }
+        }
+
+        #region Joint Conversion
+        /// <summary>
+        /// A list of possible translations for different tuple type representations.
+        /// Changes reflect in serialization of tuples from JointDictionaries!
+        /// </summary>
+        public static readonly List<JointTranslationTuple> JointTranslationList =
+            new List<JointTranslationTuple>(){
+                new JointTranslationTuple("Left Foot", SkeletonJoint.LeftFoot, 5),
+                new JointTranslationTuple("Left Knee", SkeletonJoint.LeftKnee, 4),
+                new JointTranslationTuple("Left Hip", SkeletonJoint.LeftHip, 3),
+                new JointTranslationTuple("Right Hip", SkeletonJoint.RightHip, 2),
+                new JointTranslationTuple("RightKnee", SkeletonJoint.RightKnee, 1),
+                new JointTranslationTuple("Right Foot", SkeletonJoint.RightFoot, 0),
+                new JointTranslationTuple("Left Hand", SkeletonJoint.LeftHand, 11),
+                new JointTranslationTuple("Left Elbow", SkeletonJoint.LeftElbow, 10),
+                new JointTranslationTuple("Left Shoulder", SkeletonJoint.LeftShoulder,9),
+                new JointTranslationTuple("Right Shoulder", SkeletonJoint.RightShoulder, 8),
+                new JointTranslationTuple("Right Elbow", SkeletonJoint.RightElbow, 7),
+                new JointTranslationTuple("Right Hand", SkeletonJoint.RightHand, 6),
+                new JointTranslationTuple("Neck", SkeletonJoint.Neck, 12),
+                new JointTranslationTuple("Head", SkeletonJoint.Head, 13),
+                new JointTranslationTuple("Torso", SkeletonJoint.Torso, 15),
+                new JointTranslationTuple("Waist", SkeletonJoint.Waist, 14)
+            };
+        /// <summary>
+        /// Gets the <see cref="JointTranslationTuple"/> for the given name.
+        /// </summary>
+        /// <exception cref="Exception">Thrown if no fitting tuple is found.
+        /// </exception>
+        public static JointTranslationTuple GetTranslation(String name)
+        {
+            return JointTranslationList.Single(
+                          (translationTuple) => translationTuple.name == name);
+        }
+        /// <summary>
+        /// Gets the <see cref="JointTranslationTuple"/> for the given joint.
+        /// </summary>
+        /// <exception cref="Exception">Thrown if no fitting tuple is found.
+        /// </exception>
+        public static JointTranslationTuple GetTranslation(SkeletonJoint joint)
+        {
+            return JointTranslationList.Single(
+                          (translationTuple) => translationTuple.joint_type == joint);
+        }
+        /// <summary>
+        /// Gets the <see cref="JointTranslationTuple"/> for the give export id.
+        /// </summary>
+        /// <exception cref="Exception">Thrown if no fitting tuple is found.
+        /// </exception>
+        public static JointTranslationTuple GetTranslation(int export_id)
+        {
+            return JointTranslationList.Single(
+                          (translationTuple) => translationTuple.export_id == export_id);
+        }
+        #endregion
+
+        #region Constructors
+        public JointDictionary(bool contains3DData) : base()
+        {
+            _is3DData = contains3DData;
+        }
+
+        public JointDictionary(JointDictionary original)
+            : base(original)
+        {
+            _is3DData = original.Is3DData;
+        }
+
+        private JointDictionary()
+            : base()
+        { }
+        #endregion
+
+        #region IXmlSerializable Members
+        public System.Xml.Schema.XmlSchema GetSchema()
+        {
+            return null;
+        }
+
+        public void ReadXml(System.Xml.XmlReader reader)
+        {
+            bool wasEmpty = reader.IsEmptyElement;
+            bool first = true;
+            reader.Read();
+
+            if (wasEmpty)
+                return;
+
+            while (reader.NodeType != System.Xml.XmlNodeType.EndElement)
+            {
+                reader.Read();
+                if (reader.IsEmptyElement)
+                {
+                    reader.Skip();
+                    reader.Skip();
+                    reader.Skip();
+                    reader.Skip();
+                    reader.ReadEndElement();
+                    reader.MoveToContent();
+                    continue;
+                }
+                reader.ReadStartElement("id");
+                int keyValue = reader.ReadContentAsInt();
+                SkeletonJoint key;
+                try
+                {
+                    key = GetTranslation(keyValue).joint_type;
+                }
+                catch (Exception) { key = SkeletonJoint.Invalid; }
+                reader.ReadEndElement();
+
+                float confidence = 0.0f;
+                if (reader.Name.Equals("confidence"))
+                {
+                    reader.Read();
+                    confidence = reader.ReadContentAsFloat();
+                    reader.ReadEndElement();
+                }
+
+                reader.ReadStartElement("x");
+                float x = reader.ReadContentAsFloat();
+                reader.ReadEndElement();
+                reader.ReadStartElement("y");
+                float y = reader.ReadContentAsFloat();
+                reader.ReadEndElement();
+
+                float z = 0.0f;
+                if (first)
+                {
+                    if (reader.Name.Equals("z"))
+                    {
+                        _is3DData = true;
+                    }
+                    else
+                    {
+                        _is3DData = false;
+                    }
+                    first = false;
+                }
+                if (reader.Name.Equals("z"))
+                {
+                    reader.ReadStartElement("z");
+                    z = reader.ReadContentAsFloat();
+                    reader.ReadEndElement();
+
+                    if (!_is3DData) throw new Exception("Inconsistent 2D/3D data format.");
+                }
+                else
+                {
+                    if (_is3DData) throw new Exception("Inconsistent 2D/3D data format.");
+                }
+
+                SkeletonJointPosition value = new SkeletonJointPosition();
+                value.Confidence = confidence;
+                value.Position = new Point3D(x, y, z);
+
+                if (key != SkeletonJoint.Invalid)
+                    this.Add(key, value);
+                reader.ReadEndElement();
+                reader.MoveToContent();
+            }
+        }
+
+        public void WriteXml(System.Xml.XmlWriter writer)
+        {
+            foreach (SkeletonJoint key in this.Keys)
+            {
+                String idString = null;
+                try
+                {
+                    idString = GetTranslation(key).export_id.ToString();
+                }
+                catch (Exception) { }
+                if (idString == null) continue;
+
+                writer.WriteStartElement("point");
+
+                writer.WriteStartElement("id");
+                writer.WriteValue(idString);
+                writer.WriteEndElement();
+
+                writer.WriteStartElement("confidence");
+                writer.WriteValue(this[key].Confidence.ToString("0.0",CultureInfo.InvariantCulture.NumberFormat));
+                writer.WriteEndElement();
+
+                writer.WriteStartElement("x");
+                writer.WriteValue(this[key].Position.X);
+                writer.WriteEndElement();
+
+                writer.WriteStartElement("y");
+                writer.WriteValue(this[key].Position.Y);
+                writer.WriteEndElement();
+
+                if (Is3DData)
+                {
+                    writer.WriteStartElement("z");
+                    writer.WriteValue(this[key].Position.Z);
+                    writer.WriteEndElement();
+                }
+
+                writer.WriteEndElement();
+            }
+        }
+        #endregion
+    }
+}
