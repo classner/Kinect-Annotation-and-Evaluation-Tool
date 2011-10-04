@@ -15,8 +15,8 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_3297A5356D57F2015AE247C385D957CD"
-        "OwnerKey" = "8:_32E97342EC4548FFBE67C822D9D1F4BC"
+        "MsmKey" = "8:_01920792B3314395A2CDC05005D271A7"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -33,14 +33,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_443C7C0050D148858A8CD0B7A3ACFD36"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_3EA1B2E455646156614E439515EF12A4"
+        "OwnerKey" = "8:_32E97342EC4548FFBE67C822D9D1F4BC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_4ED5DF28A2C8C4EA0A32133780363293"
-        "OwnerKey" = "8:_32E97342EC4548FFBE67C822D9D1F4BC"
+        "MsmKey" = "8:_443C7C0050D148858A8CD0B7A3ACFD36"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -51,19 +51,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_6FBCE4A27F04E5965BB78906FC8DCD74"
-        "OwnerKey" = "8:_4ED5DF28A2C8C4EA0A32133780363293"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_6FBCE4A27F04E5965BB78906FC8DCD74"
+        "MsmKey" = "8:_7B9E929ABB04DE62E3E596F79731E294"
         "OwnerKey" = "8:_32E97342EC4548FFBE67C822D9D1F4BC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_7B9E929ABB04DE62E3E596F79731E294"
+        "MsmKey" = "8:_924AACA2E5B23971D31A4B211141FE25"
         "OwnerKey" = "8:_32E97342EC4548FFBE67C822D9D1F4BC"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -75,8 +69,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_D402FB64F4294977A6B6BB6E3DEEC157"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_BBEAC21A67618EFFAEC54BD8DF8E074B"
+        "OwnerKey" = "8:_3EA1B2E455646156614E439515EF12A4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_BBEAC21A67618EFFAEC54BD8DF8E074B"
+        "OwnerKey" = "8:_32E97342EC4548FFBE67C822D9D1F4BC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -94,25 +94,25 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3297A5356D57F2015AE247C385D957CD"
+        "OwnerKey" = "8:_924AACA2E5B23971D31A4B211141FE25"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_3EA1B2E455646156614E439515EF12A4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_BBEAC21A67618EFFAEC54BD8DF8E074B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_7B9E929ABB04DE62E3E596F79731E294"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4ED5DF28A2C8C4EA0A32133780363293"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6FBCE4A27F04E5965BB78906FC8DCD74"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -220,23 +220,12 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3297A5356D57F2015AE247C385D957CD"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_01920792B3314395A2CDC05005D271A7"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:MediaSlider, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_3297A5356D57F2015AE247C385D957CD"
-                    {
-                    "Name" = "8:MediaSlider.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:MediaSlider.dll"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\Documentation\\README.pdf"
+            "TargetName" = "8:README.PDF"
             "Tag" = "8:"
-            "Folder" = "8:_B176B7EF7B4F4173981987F627DADC02"
+            "Folder" = "8:_BDC67B93977B4F339DFD0C1C1D5FA6A9"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -248,7 +237,7 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3313D14B03C846C19EFE7E726C22BBA4"
@@ -271,34 +260,14 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_443C7C0050D148858A8CD0B7A3ACFD36"
-            {
-            "SourcePath" = "8:..\\KinectAET\\Resources\\Licenses\\CPOL.html"
-            "TargetName" = "8:CPOL.html"
-            "Tag" = "8:"
-            "Folder" = "8:_0FBF754F63F74E9DA210C0FF3DFBD5C0"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4ED5DF28A2C8C4EA0A32133780363293"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3EA1B2E455646156614E439515EF12A4"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:MathNet.Numerics, Version=2011.4.17.0, Culture=neutral, PublicKeyToken=cd8b63ad3d691a37, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_4ED5DF28A2C8C4EA0A32133780363293"
+                    "_3EA1B2E455646156614E439515EF12A4"
                     {
                     "Name" = "8:MathNet.Numerics.dll"
                     "Attributes" = "3:512"
@@ -322,6 +291,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_443C7C0050D148858A8CD0B7A3ACFD36"
+            {
+            "SourcePath" = "8:..\\KinectAET\\Resources\\Licenses\\CPOL.html"
+            "TargetName" = "8:CPOL.html"
+            "Tag" = "8:"
+            "Folder" = "8:_0FBF754F63F74E9DA210C0FF3DFBD5C0"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_52018B69C99643B1807F0C3B0AFF1059"
             {
             "SourcePath" = "8:..\\KinectAET\\Resources\\Licenses\\gpl-3.0.txt"
@@ -342,20 +331,20 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6FBCE4A27F04E5965BB78906FC8DCD74"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7B9E929ABB04DE62E3E596F79731E294"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:zlib.net, Version=1.0.3.0, Culture=neutral, PublicKeyToken=47d7877cb3620160"
+            "AssemblyAsmDisplayName" = "8:OpenNI.Net, Version=1.3.2.3, Culture=neutral, PublicKeyToken=6b43d0c6cf74ee7f, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
-                    "_6FBCE4A27F04E5965BB78906FC8DCD74"
+                    "_7B9E929ABB04DE62E3E596F79731E294"
                     {
-                    "Name" = "8:zlib.net.dll"
+                    "Name" = "8:OpenNI.Net.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:zlib.net.dll"
+            "SourcePath" = "8:OpenNI.Net.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_B176B7EF7B4F4173981987F627DADC02"
@@ -373,20 +362,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7B9E929ABB04DE62E3E596F79731E294"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_924AACA2E5B23971D31A4B211141FE25"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:OpenNI.Net, Version=1.3.2.3, Culture=neutral, PublicKeyToken=6b43d0c6cf74ee7f, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:MediaSlider, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_7B9E929ABB04DE62E3E596F79731E294"
+                    "_924AACA2E5B23971D31A4B211141FE25"
                     {
-                    "Name" = "8:OpenNI.Net.dll"
+                    "Name" = "8:MediaSlider.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:OpenNI.Net.dll"
+            "SourcePath" = "8:MediaSlider.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_B176B7EF7B4F4173981987F627DADC02"
@@ -424,12 +413,23 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D402FB64F4294977A6B6BB6E3DEEC157"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_BBEAC21A67618EFFAEC54BD8DF8E074B"
             {
-            "SourcePath" = "8:..\\Readme\\README.pdf"
-            "TargetName" = "8:README.pdf"
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:zlib.net, Version=1.0.3.0, Culture=neutral, PublicKeyToken=47d7877cb3620160"
+                "ScatterAssemblies"
+                {
+                    "_BBEAC21A67618EFFAEC54BD8DF8E074B"
+                    {
+                    "Name" = "8:zlib.net.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:zlib.net.dll"
+            "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_BDC67B93977B4F339DFD0C1C1D5FA6A9"
+            "Folder" = "8:_B176B7EF7B4F4173981987F627DADC02"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -441,7 +441,7 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F7D02868133F4CABB9445EF2F6294BB7"
@@ -693,7 +693,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_D402FB64F4294977A6B6BB6E3DEEC157"
+            "Target" = "8:_01920792B3314395A2CDC05005D271A7"
             "Folder" = "8:_E9BA9481AD4B4CA496FF1F25B2F222B4"
             "WorkingFolder" = "8:_BDC67B93977B4F339DFD0C1C1D5FA6A9"
             "Icon" = "8:"
@@ -1142,7 +1142,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_32E97342EC4548FFBE67C822D9D1F4BC"
             {
-            "SourcePath" = "8:..\\KinectAET\\obj\\x86\\Release\\KinectAET.exe"
+            "SourcePath" = "8:..\\KinectAET\\obj\\x86\\Debug\\KinectAET.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_B176B7EF7B4F4173981987F627DADC02"
