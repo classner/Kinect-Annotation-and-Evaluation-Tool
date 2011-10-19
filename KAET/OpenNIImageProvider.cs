@@ -35,7 +35,7 @@ using OpenNI;
 using System.Windows.Forms;
 
 
-namespace KinectAET
+namespace KAET
 {
     public abstract class OpenNIImageProvider
     {

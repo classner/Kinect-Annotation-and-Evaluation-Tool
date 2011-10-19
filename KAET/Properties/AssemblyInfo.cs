@@ -6,11 +6,11 @@ using System.Resources;
 // Allgemeine Informationen über eine Assembly werden über die folgenden 
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die mit einer Assembly verknüpft sind.
-[assembly: AssemblyTitle("Kinect Annotation and Evaluation Tool")]
+[assembly: AssemblyTitle("KAET")]
 [assembly: AssemblyDescription("This project was started as a university project at the chair for multimedia computing (www.multimedia-computing.org) at Augsburg University and created by Christoph Lassner (www.multimedia-computing.org/wiki/Christoph_Lassner). The supervisors were Prof. Rainer Lienhart and Thomas Greif. The first version was released in June 2011. It is available for download, usage and modification under the terms of the GPL version 3 or newer. You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Augsburg University")]
-[assembly: AssemblyProduct("Kinect Annotation and Evaluation Tool")]
+[assembly: AssemblyProduct("KAET")]
 [assembly: AssemblyCopyright("Copyright 2011 Christoph Lassner")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -29,7 +29,7 @@ using System.Xml.Serialization;
 using OpenNI;
 using System.Linq;
 
-namespace KinectAET
+namespace KAET
 {
     /// <summary>
     /// Represents one set of equivalent translations for the same tuple.

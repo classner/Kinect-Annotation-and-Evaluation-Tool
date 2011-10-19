@@ -1,4 +1,4 @@
-﻿namespace KinectAET
+﻿namespace KAET
 {
     partial class MainWindow
     {
@@ -291,7 +291,7 @@
             // folderBrowserDialogProjectDirectory
             // 
             this.folderBrowserDialogProjectDirectory.Description = "Select the project directory. It contains subfolders with the data for each captu" +
-                "re. Select an empty folder to start recording new data.";
+    "re. Select an empty folder to start recording new data.";
             this.folderBrowserDialogProjectDirectory.RootFolder = System.Environment.SpecialFolder.MyComputer;
             // 
             // fileSystemWatcherProjectDir
@@ -316,7 +316,7 @@
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "MainWindow";
-            this.Text = "Kinect Annotation and Evaluation Tool";
+            this.Text = "KAET";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainWindow_FormClosing);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.MainWindow_KeyUp);
             this.tabControlVideoSources.ResumeLayout(false);

@@ -19,7 +19,7 @@
 
 using System;
 
-namespace KinectAET
+namespace KAET
 {
 	public class NaturalSort
 	{

@@ -29,7 +29,7 @@ using System.Xml.Serialization;
 using System.Collections;
 using System.Linq;
 
-namespace KinectAET
+namespace KAET
 {
     [XmlRoot("annotationlist"), Serializable]
     public class ImageDictionary :

@@ -35,7 +35,7 @@ using System.Xml.Serialization;
 using System.Linq;
 
 
-namespace KinectAET
+namespace KAET
 {
     /// <summary>
     /// A class to interface with an OpenNI recording stream.

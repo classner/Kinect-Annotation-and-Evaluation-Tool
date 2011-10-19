@@ -34,7 +34,7 @@ using System.Xml.Serialization;
 using OpenNI;
 
 
-namespace KinectAET
+namespace KAET
 {
     /// <summary>
     /// A class to interface with an OpenNI livestream device.

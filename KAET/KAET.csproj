@@ -8,8 +8,8 @@
     <ProjectGuid>{3214C3A1-0369-4127-A67C-DC201E93355F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KinectAET</RootNamespace>
-    <AssemblyName>KinectAET</AssemblyName>
+    <RootNamespace>KAET</RootNamespace>
+    <AssemblyName>KAET</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -52,7 +52,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>KinectAET.Program</StartupObject>
+    <StartupObject>KAET.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Resources\Icons\logo.ico</ApplicationIcon>
@@ -90,8 +90,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MathNet.Numerics, Version=2011.4.17.0, Culture=neutral, PublicKeyToken=cd8b63ad3d691a37, processorArchitecture=MSIL" />
-    <Reference Include="OpenNI.Net, Version=1.3.2.3, Culture=neutral, PublicKeyToken=6b43d0c6cf74ee7f, processorArchitecture=x86">
-      <HintPath>..\..\..\..\..\..\Program Files\OpenNI\Bin\OpenNI.Net.dll</HintPath>
+    <Reference Include="OpenNI.Net, Version=1.3.4.3, Culture=neutral, PublicKeyToken=6b43d0c6cf74ee7f, processorArchitecture=AMD64">
+      <HintPath>..\..\..\..\Program Files\OpenNI\Bin64\OpenNI.Net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

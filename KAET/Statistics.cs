@@ -33,7 +33,7 @@ using MathNet.Numerics.Statistics;
 using MathNet.Numerics.Distributions;
 using OpenNI;
 
-namespace KinectAET
+namespace KAET
 {
     internal class Statistics : INotifyPropertyChanged
     {

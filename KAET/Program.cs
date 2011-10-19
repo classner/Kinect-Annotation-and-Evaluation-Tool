@@ -22,15 +22,23 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
+
+using System;
 using System.Windows.Forms;
 
-namespace KinectAET
+namespace KAET
 {
-    public partial class FormExportProgress : Form
+    static class Program
     {
-        public FormExportProgress()
+        /// <summary>
+        /// Main entry point.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            InitializeComponent();
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new MainWindow());
         }
     }
 }

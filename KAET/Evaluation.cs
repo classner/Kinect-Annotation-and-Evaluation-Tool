@@ -36,7 +36,7 @@ using System.Xml.Serialization;
 using OpenNI;
 using System.Windows.Forms.DataVisualization.Charting;
 
-namespace KinectAET
+namespace KAET
 {
     public partial class Evaluation : Form
     {

@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:ApplicationSetup"
+"ProjectName" = "8:SetupX64"
 "LanguageId" = "3:0"
 "CodePage" = "3:1252"
 "UILanguageId" = "3:0"
@@ -21,6 +21,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_1E3E894286CCC3253361CABF6EB69461"
+        "OwnerKey" = "8:_32E97342EC4548FFBE67C822D9D1F4BC"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_32E97342EC4548FFBE67C822D9D1F4BC"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -29,12 +35,6 @@
         {
         "MsmKey" = "8:_3313D14B03C846C19EFE7E726C22BBA4"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_3EA1B2E455646156614E439515EF12A4"
-        "OwnerKey" = "8:_32E97342EC4548FFBE67C822D9D1F4BC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -51,13 +51,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_7B9E929ABB04DE62E3E596F79731E294"
+        "MsmKey" = "8:_775D8EE311C9C69B3070D67AB5DBB72A"
         "OwnerKey" = "8:_32E97342EC4548FFBE67C822D9D1F4BC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_924AACA2E5B23971D31A4B211141FE25"
+        "MsmKey" = "8:_8929F97E565DC246C4327E38CF2235B1"
         "OwnerKey" = "8:_32E97342EC4548FFBE67C822D9D1F4BC"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -69,24 +69,24 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_BBEAC21A67618EFFAEC54BD8DF8E074B"
-        "OwnerKey" = "8:_3EA1B2E455646156614E439515EF12A4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_BBEAC21A67618EFFAEC54BD8DF8E074B"
-        "OwnerKey" = "8:_32E97342EC4548FFBE67C822D9D1F4BC"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_F7D02868133F4CABB9445EF2F6294BB7"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
+        "MsmKey" = "8:_FB4345AD380C2A1455FBDF60EC4D693E"
+        "OwnerKey" = "8:_1E3E894286CCC3253361CABF6EB69461"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FB4345AD380C2A1455FBDF60EC4D693E"
+        "OwnerKey" = "8:_32E97342EC4548FFBE67C822D9D1F4BC"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_32E97342EC4548FFBE67C822D9D1F4BC"
         "MsmSig" = "8:_UNDEFINED"
@@ -94,25 +94,25 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_924AACA2E5B23971D31A4B211141FE25"
+        "OwnerKey" = "8:_775D8EE311C9C69B3070D67AB5DBB72A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3EA1B2E455646156614E439515EF12A4"
+        "OwnerKey" = "8:_1E3E894286CCC3253361CABF6EB69461"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BBEAC21A67618EFFAEC54BD8DF8E074B"
+        "OwnerKey" = "8:_FB4345AD380C2A1455FBDF60EC4D693E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7B9E929ABB04DE62E3E596F79731E294"
+        "OwnerKey" = "8:_8929F97E565DC246C4327E38CF2235B1"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -160,7 +160,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\ApplicationSetup.msi"
+        "OutputFilename" = "8:Release\\KAETSetupX64.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -240,34 +240,14 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3313D14B03C846C19EFE7E726C22BBA4"
-            {
-            "SourcePath" = "8:..\\KinectAET\\Resources\\Licenses\\math.net MITX11 license.txt"
-            "TargetName" = "8:math.net MITX11 license.txt"
-            "Tag" = "8:"
-            "Folder" = "8:_0FBF754F63F74E9DA210C0FF3DFBD5C0"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3EA1B2E455646156614E439515EF12A4"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1E3E894286CCC3253361CABF6EB69461"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:MathNet.Numerics, Version=2011.4.17.0, Culture=neutral, PublicKeyToken=cd8b63ad3d691a37, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_3EA1B2E455646156614E439515EF12A4"
+                    "_1E3E894286CCC3253361CABF6EB69461"
                     {
                     "Name" = "8:MathNet.Numerics.dll"
                     "Attributes" = "3:512"
@@ -291,9 +271,29 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3313D14B03C846C19EFE7E726C22BBA4"
+            {
+            "SourcePath" = "8:..\\KAET\\Resources\\Licenses\\math.net MITX11 license.txt"
+            "TargetName" = "8:math.net MITX11 license.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_0FBF754F63F74E9DA210C0FF3DFBD5C0"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_443C7C0050D148858A8CD0B7A3ACFD36"
             {
-            "SourcePath" = "8:..\\KinectAET\\Resources\\Licenses\\CPOL.html"
+            "SourcePath" = "8:..\\KAET\\Resources\\Licenses\\CPOL.html"
             "TargetName" = "8:CPOL.html"
             "Tag" = "8:"
             "Folder" = "8:_0FBF754F63F74E9DA210C0FF3DFBD5C0"
@@ -313,7 +313,7 @@
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_52018B69C99643B1807F0C3B0AFF1059"
             {
-            "SourcePath" = "8:..\\KinectAET\\Resources\\Licenses\\gpl-3.0.txt"
+            "SourcePath" = "8:..\\KAET\\Resources\\Licenses\\gpl-3.0.txt"
             "TargetName" = "8:gpl-3.0.txt"
             "Tag" = "8:"
             "Folder" = "8:_0FBF754F63F74E9DA210C0FF3DFBD5C0"
@@ -331,45 +331,14 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7B9E929ABB04DE62E3E596F79731E294"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:OpenNI.Net, Version=1.3.2.3, Culture=neutral, PublicKeyToken=6b43d0c6cf74ee7f, processorArchitecture=x86"
-                "ScatterAssemblies"
-                {
-                    "_7B9E929ABB04DE62E3E596F79731E294"
-                    {
-                    "Name" = "8:OpenNI.Net.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:OpenNI.Net.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_B176B7EF7B4F4173981987F627DADC02"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_924AACA2E5B23971D31A4B211141FE25"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_775D8EE311C9C69B3070D67AB5DBB72A"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:MediaSlider, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_924AACA2E5B23971D31A4B211141FE25"
+                    "_775D8EE311C9C69B3070D67AB5DBB72A"
                     {
                     "Name" = "8:MediaSlider.dll"
                     "Attributes" = "3:512"
@@ -393,9 +362,40 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8929F97E565DC246C4327E38CF2235B1"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:OpenNI.Net, Version=1.3.4.3, Culture=neutral, PublicKeyToken=6b43d0c6cf74ee7f, processorArchitecture=AMD64"
+                "ScatterAssemblies"
+                {
+                    "_8929F97E565DC246C4327E38CF2235B1"
+                    {
+                    "Name" = "8:OpenNI.Net.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:OpenNI.Net.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_B176B7EF7B4F4173981987F627DADC02"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A2FEEDED9BCA40ED99F43904A18F23CC"
             {
-            "SourcePath" = "8:..\\KinectAET\\Resources\\Licenses\\lgpl-3.0.txt"
+            "SourcePath" = "8:..\\KAET\\Resources\\Licenses\\lgpl-3.0.txt"
             "TargetName" = "8:lgpl-3.0.txt"
             "Tag" = "8:"
             "Folder" = "8:_0FBF754F63F74E9DA210C0FF3DFBD5C0"
@@ -413,14 +413,34 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_BBEAC21A67618EFFAEC54BD8DF8E074B"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F7D02868133F4CABB9445EF2F6294BB7"
+            {
+            "SourcePath" = "8:..\\KAET\\Resources\\Icons\\logo.ico"
+            "TargetName" = "8:logo.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_B176B7EF7B4F4173981987F627DADC02"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FB4345AD380C2A1455FBDF60EC4D693E"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:zlib.net, Version=1.0.3.0, Culture=neutral, PublicKeyToken=47d7877cb3620160"
                 "ScatterAssemblies"
                 {
-                    "_BBEAC21A67618EFFAEC54BD8DF8E074B"
+                    "_FB4345AD380C2A1455FBDF60EC4D693E"
                     {
                     "Name" = "8:zlib.net.dll"
                     "Attributes" = "3:512"
@@ -442,26 +462,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F7D02868133F4CABB9445EF2F6294BB7"
-            {
-            "SourcePath" = "8:..\\KinectAET\\Resources\\Icons\\logo.ico"
-            "TargetName" = "8:logo.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_B176B7EF7B4F4173981987F627DADC02"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -563,9 +563,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Kinect Annotation and Evaluation Tool"
+        "ProductName" = "8:KAET"
         "ProductCode" = "8:{74B4231E-FF29-4F22-A3E0-20CA5397D40D}"
-        "PackageCode" = "8:{B954F39F-F7E7-4124-AC21-B90BA0A7457B}"
+        "PackageCode" = "8:{9235AF4E-39A3-476C-AFAD-009F1CFC9237}"
         "UpgradeCode" = "8:{EC16AFD4-4FCB-438F-9108-F712F47DE801}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -576,7 +576,7 @@
         "Manufacturer" = "8:Augsburg University"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:Install Kinect Annotation and  Evaluation Tool"
+        "Title" = "8:Install KAET"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Christoph Lassner"
         "Keywords" = "8:"
@@ -586,7 +586,7 @@
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:0"
+        "TargetPlatform" = "3:1"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:0"
@@ -701,7 +701,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DC0C00C1F26C492C83A8C1BC58C41755"
             {
-            "Name" = "8:KinectAET"
+            "Name" = "8:KAET"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -1142,7 +1142,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_32E97342EC4548FFBE67C822D9D1F4BC"
             {
-            "SourcePath" = "8:..\\KinectAET\\obj\\x86\\Debug\\KinectAET.exe"
+            "SourcePath" = "8:..\\KAET\\obj\\x64\\Release\\KAET.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_B176B7EF7B4F4173981987F627DADC02"

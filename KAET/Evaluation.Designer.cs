@@ -1,4 +1,4 @@
-﻿namespace KinectAET
+﻿namespace KAET
 {
     partial class Evaluation
     {

@@ -30,9 +30,9 @@ using System.IO;
 using System.IO.Compression;
 using System.Windows.Forms;
 using System.Xml.Serialization;
-using KinectAET.Properties;
+using KAET.Properties;
 
-namespace KinectAET
+namespace KAET
 {
     public partial class MainWindow : Form
     {
