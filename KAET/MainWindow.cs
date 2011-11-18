@@ -118,10 +118,21 @@ namespace KAET
             evaluationForm.EvaluationRangeChanged += new Action<int, int>(evaluationForm_EvaluationRangeChanged);
 
             // Initialize File system watcher
-            fileSystemWatcherProjectDir.Path = projectDirectory;
+            try
+            {
+                fileSystemWatcherProjectDir.Path = projectDirectory;
 
-            // Initialize Event system.
-            fileSystemWatcherProjectDir.Changed += fileSystemWatcherProjectDir_Changed;
+                // Initialize Event system.
+                fileSystemWatcherProjectDir.Changed += fileSystemWatcherProjectDir_Changed;
+            }
+            catch (Exception)
+            {
+                projectDirectory =
+                        Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                MessageBox.Show(this, "Project folder could not be loaded. Using Default.", "Info",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // TODO Error handling
+            }
             videoDisplay.ErrorOccured += videoImageControl_ErrorOccured;
             tabControlVideoSources.SelectedIndexChanged += tabControlVideoSources_SelectedIndexChanged;
 
